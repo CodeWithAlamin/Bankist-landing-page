@@ -19,4 +19,4 @@ SimpliBank landing page I just made it after learning some advance JavaScript DO
 
 #### Screenshot
 
-<p><img align="center" src="Screenshot-simplibank-landing-page.png"/></p>
+<p><img align="center" src="thumbnail-simplibank-landing-page.png"/></p>
