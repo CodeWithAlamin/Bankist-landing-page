@@ -279,10 +279,21 @@ const slider = function () {
       .querySelector(`.dots__dot[data-slide="${slide}"]`)
       .classList.add("dots__dot--active");
   };
+
+  // Add this function to the slider() function
+  const handleResize = function () {
+    // Recalculate slides position on window resize
+    goToSlide(curSlide);
+  };
+
+  // Add this in the slider() function
+  window.addEventListener("resize", handleResize);
+
   const init = function () {
     goToSlide(0);
     createDots();
     activateDot(0);
+    window.addEventListener("resize", handleResize);
   };
   init();
 

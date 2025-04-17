@@ -1,16 +1,14 @@
-/* The page is NOT responsive. You can implement responsiveness yourself if you wanna have some fun 😃 */
-
 :root {
-  --color-primary: #5ec576;
-  --color-secondary: #ffcb03;
-  --color-tertiary: #ff585f;
-  --color-primary-darker: #4bbb7d;
-  --color-secondary-darker: #ffbb00;
-  --color-tertiary-darker: #fd424b;
-  --color-primary-opacity: #5ec5763a;
-  --color-secondary-opacity: #ffcd0331;
-  --color-tertiary-opacity: #ff58602d;
-  --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
+  --color-primary: rgb(94, 197, 194);
+  --color-secondary: rgb(3, 154, 255);
+  --color-tertiary: rgb(194, 88, 255);
+  --color-primary-darker: rgb(74, 154, 151);
+  --color-secondary-darker: rgb(0, 130, 216);
+  --color-tertiary-darker: rgb(162, 73, 213);
+  --color-primary-opacity: rgba(94, 197, 194, 0.227);
+  --color-secondary-opacity: rgba(3, 154, 255, 0.192);
+  --color-tertiary-opacity: rgba(194, 88, 255, 0.176);
+  --gradient-primary: linear-gradient(to top left, rgb(57, 204, 220), #f4f5ff);
   --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
 }
 
@@ -549,6 +547,7 @@ h4 {
 /* FOOTER */
 .footer {
   padding: 10rem 3rem;
+  padding-bottom: 5rem;
   background-color: #37383d;
 }
 
@@ -573,10 +572,10 @@ h4 {
   height: 5rem;
   display: block;
   margin: 0 auto;
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
 }
 
-.footer__copyright {
+/* .footer__copyright {
   font-size: 1.4rem;
   color: #aaa;
   text-align: center;
@@ -584,7 +583,7 @@ h4 {
 
 .footer__copyright .footer__link {
   font-size: 1.4rem;
-}
+} */
 
 /* MODAL WINDOW */
 .modal {
@@ -723,5 +722,266 @@ h4 {
 
   .footer__nav {
     flex-wrap: wrap;
+  }
+}
+
+/* //////////////////////////////////////// */
+
+/* ...existing code... */
+
+/* RESPONSIVE DESIGN */
+/* Large devices (desktops, up to 1200px) */
+@media (max-width: 1200px) {
+  html {
+    font-size: 56.25%; /* 9px */
+  }
+
+  .features {
+    margin: 0 6rem;
+  }
+
+  .section__header {
+    font-size: 3.5rem;
+  }
+
+  .testimonial {
+    width: 80%;
+  }
+}
+
+/* Medium devices (tablets, up to 900px) */
+@media (max-width: 900px) {
+  html {
+    font-size: 50%; /* 8px */
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  .nav {
+    padding: 0 3rem;
+  }
+
+  .nav__item {
+    margin-left: 2.5rem;
+  }
+
+  .header__title {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .header__img {
+    grid-column: 1;
+    grid-row: 1;
+    transform: translateY(0);
+    width: 60%;
+    justify-self: center;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    margin: 0 3rem;
+  }
+
+  .features__img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .section {
+    padding: 10rem 3rem;
+  }
+
+  .operations__content {
+    padding: 2.5rem 3rem 4.5rem 3rem;
+  }
+
+  .slider {
+    height: 60rem;
+  }
+
+  .slide {
+    height: 60rem;
+  }
+
+  .testimonial {
+    width: 90%;
+  }
+}
+
+/* Small devices (landscape phones, up to 700px) */
+@media (max-width: 700px) {
+  h1 {
+    font-size: 4rem;
+    margin-top: 2rem;
+  }
+
+  .nav {
+    height: auto;
+    padding: 1.5rem;
+    flex-direction: column;
+  }
+
+  .nav__logo {
+    margin-bottom: 1.5rem;
+  }
+
+  .nav__links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .nav__item {
+    margin-left: 0;
+    margin: 0.5rem;
+  }
+
+  .header__img {
+    width: 80%;
+  }
+
+  .operations__tab-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .operations__tab {
+    margin-right: 0;
+    width: 80%;
+    text-align: center;
+  }
+
+  .operations__content--active {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .operations__icon {
+    margin: 0 auto;
+  }
+
+  .operations__content p {
+    grid-column: 1;
+  }
+
+  .slider__btn {
+    height: 4rem;
+    width: 4rem;
+    font-size: 2.25rem;
+  }
+
+  .dots {
+    bottom: 3%;
+  }
+
+  .section--sign-up .btn {
+    font-size: 1.6rem;
+    padding: 1.8rem 4rem;
+  }
+}
+
+/* Extra small devices (phones, up to 500px) */
+@media (max-width: 500px) {
+  html {
+    font-size: 45%; /* 7.2px */
+  }
+
+  .section {
+    padding: 8rem 2rem;
+  }
+
+  .section__title {
+    margin-bottom: 6rem;
+  }
+
+  .header {
+    height: auto;
+    padding-bottom: 3rem;
+  }
+
+  .header__title {
+    margin-top: 3rem;
+  }
+
+  .header__img {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  .nav__logo {
+    display: block;
+    height: 3.5rem;
+  }
+
+  .nav__links {
+    gap: 0.5rem;
+  }
+
+  .nav__link:link,
+  .nav__link:visited {
+    font-size: 1.5rem;
+  }
+
+  .operations__tab span {
+    margin-right: 0.5rem;
+  }
+
+  .operations__content {
+    padding: 1rem;
+  }
+
+  .modal {
+    padding: 3rem 2rem;
+  }
+
+  .modal__form {
+    margin: 0;
+    gap: 1.5rem;
+  }
+
+  .modal__header {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .testimonial::before {
+    top: -4rem;
+    left: -3rem;
+    font-size: 12rem;
+  }
+
+  .testimonial__text {
+    font-size: 1.2rem;
+  }
+
+  .testimonial__author {
+    grid-template-columns: 5rem 1fr;
+    column-gap: 1.5rem;
+  }
+
+  .testimonial__photo {
+    width: 5rem;
+  }
+
+  .footer__nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer__item {
+    margin-right: 0;
   }
 }

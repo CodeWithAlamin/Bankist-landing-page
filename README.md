@@ -1,8 +1,8 @@
-# Bankinst landing page
+# SimpliBank landing page
 
-Bankist landing page I just made after learning some advance JavaScript DOM manipulations from Jonas Schmedtmann's course. By the way, It is not fully responsive because I just wanted to focous JavaScript mostly.
+SimpliBank landing page I just made it after learning some advance JavaScript DOM manipulations from Jonas Schmedtmann's course.
 
-- [👉Live Preview👈](https://bankist-landing-page-CodeWithAlamin.netlify.app/)
+- [👉Live Preview👈](https://simplibank-landing-page-alamin.netlify.app/)
 
 ### Built with
 
@@ -19,4 +19,4 @@ Bankist landing page I just made after learning some advance JavaScript DOM mani
 
 #### Screenshot
 
-<p><img align="center" src="Screenshot-Bankist-landing-page.png"/></p>
+<p><img align="center" src="Screenshot-simplibank-landing-page.png"/></p>
